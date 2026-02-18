@@ -1,1 +1,9 @@
+# macOS
 .DS_Store
+
+# Xcode (user-specific / machine-specific)
+DerivedData/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+**/xcuserdata/

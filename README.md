@@ -19,6 +19,16 @@ Arcades is a SwiftUI iOS app that bundles a couple of casual games behind a ligh
 2. Select the `arcades` scheme and an iOS simulator (16.1+ recommended).
 3. Run the project (`⌘R`).
 
+## Screenshots
+<p>
+  <img src="screenshots/arcades_screenshot_1.png" width="220" alt="Onboarding" />
+  <img src="screenshots/arcades_screenshot_2.png" width="220" alt="Game picker" />
+</p>
+<p>
+  <img src="screenshots/arcades_screenshot_4.png" width="220" alt="Memory game" />
+  <img src="screenshots/arcades_screenshot_3.png" width="220" alt="Checkers" />
+</p>
+
 ## Gameplay
 1. Home: enter a user name (minimum 5 characters) and tap **Continue**.
 2. Game Picker: choose **Memory Game** or **Checkers**.
@@ -38,8 +48,18 @@ Arcades is a SwiftUI iOS app that bundles a couple of casual games behind a ligh
 - `arcades/Checkers Game/` — checkers state (`CheckersGameFrameWork.swift`), board pieces (`UnitMaker.swift`), and UI (`CheckersContentView.swift`).
 - `arcades/Player Name Tracker/` — shared name state (`NameTracker.swift`).
 - `Assets.xcassets` — game art and backgrounds.
-- `screenshots/` — place to store captures of the app (if available).
+- `screenshots/` — app screenshots used in this README.
 
 ## Notes
 - No external dependencies are required beyond SwiftUI.
 - If assets appear blank, confirm `Assets.xcassets` is included in the target membership.
+
+## Smoke Check (build)
+From the repo root:
+
+```bash
+xcodebuild -project arcades.xcodeproj -scheme arcades -destination 'generic/platform=iOS Simulator' build
+```
+
+## License
+MIT. See `LICENSE`.
